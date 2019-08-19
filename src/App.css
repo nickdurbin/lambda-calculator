@@ -1,0 +1,27 @@
+.container {
+  width: 30%;
+  height: 600px;
+  background-color: darkred;
+  border: 3px darkslategray solid;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width: 100%;
+  height: 15%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 20%;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.display {
+  width: 90%;
+  height: 4.5rem;
+  background-color: darkslategray;
+  margin: 0 auto;
+  border-radius: 40px;
+}

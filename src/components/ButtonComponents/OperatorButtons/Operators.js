@@ -9,7 +9,7 @@ const Operators = () => {
   return (
     <div className='operators-container'>
        {setOperators.map((operator, index) => {
-          return <OperatorButton key={ index } symbol={ operator.char } />
+          return <OperatorButton key={ index } symbol={ operator.char } value={ operator.value } />
        })}
     </div>
   );

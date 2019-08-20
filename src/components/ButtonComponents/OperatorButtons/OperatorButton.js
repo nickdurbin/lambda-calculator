@@ -1,8 +1,15 @@
 import React from "react";
+import { operators } from "../../../data";
 
-const OperatorButton = ({ symbol }) => {
+const OperatorButton = ({ setDisplay, symbol }) => {
+
+  function calculate() {
+    let total = setDisplay(symbol + operators.value)
+    return total;
+  }
+
   return (
-    <div className="operator-button">{ symbol }</div>
+    <div className="operator-button" onclick={() => calculate()}>{ symbol }</div>
   );
 };
 

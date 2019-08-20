@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
@@ -14,12 +14,14 @@ function App() {
     <div className="container">
       <Logo />
       <Display display={display}/>
-      <div className="App">
-        <Specials setDisplay={setDisplay}/>
-        <Numbers setDisplay={setDisplay}/>
-      </div>
-      <div className="operators">
-        <Operators setDisplay={setDisplay}/>
+      <div className='buttons-container'>
+        <div className="special-number">
+          <Specials setDisplay={setDisplay}/>
+          <Numbers setDisplay={setDisplay}/>
+        </div>
+        <div className="operators">
+          <Operators setDisplay={setDisplay}/>
+        </div>
       </div>
     </div>
   );

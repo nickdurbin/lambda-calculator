@@ -1,6 +1,6 @@
 .container {
   width: 25%;
-  height: 600px;
+  height: 700px;
   background-color: darkred;
   border: 3px #131a1a solid;
   margin: 0 auto;
@@ -24,4 +24,76 @@
   background-color: #131a1a;
   margin: 0 auto;
   border-radius: 40px;
+}
+
+.specials-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.special-button {
+  text-align: center;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  background-color: rgb(0, 112, 187);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.numbers-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.number-button {
+  text-align: center;
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  background-color: rgb(38, 38, 156);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.special-number {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.operators {
+  width: 20%;
+}
+
+.operators-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.operator-button {
+  text-align: center;
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(49, 149, 243);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
 }

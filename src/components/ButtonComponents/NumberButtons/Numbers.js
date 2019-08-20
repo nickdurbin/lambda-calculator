@@ -2,11 +2,24 @@ import React, { useState } from "react";
 import { numbers } from "../../../data";
 import NumberButton from "../NumberButtons/NumberButton";
 
-const Numbers = () => {
-  const [numbers, setNumbers] = useState(0);
+const Numbers = (props) => {
+  const [setNumbers] = useState(numbers);
   return (
-    <div className="numbersBtnContainer">
-      { numbers.map((int) => { return int.numbers }) }
+    <div className="numbers-container">
+      { setNumbers.map((num, index) => { 
+        return index !== 9 
+        ?
+        <NumberButton 
+        key={index} 
+        symbol={num}
+        setDisplay={props.setDisplay} /> 
+        : 
+        <NumberButton 
+        key={index} 
+        symbol={ num } 
+        name='zero' 
+        setDisplay={props.setDisplay} /> 
+ })}
     </div>
   );
 };

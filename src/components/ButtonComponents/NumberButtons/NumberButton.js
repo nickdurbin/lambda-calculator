@@ -1,10 +1,14 @@
 import React from "react";
 
-const NumberButton = () => {
+const NumberButton = (props) => {
+  const classes = `number-button ${props.name}`
+  function handleChange() {
+    props.setDisplay(props.symbol)
+  }
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <div className={classes} onClick={() => handleChange()}>
+      {props.symbol}
+    </div>
   );
 };
 

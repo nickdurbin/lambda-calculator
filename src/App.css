@@ -108,11 +108,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 6px;
 }
 
 .operator-button {
   text-align: center;
-  margin: 14px auto;
+  margin: 13px auto;
   padding-top: 18px;
   width: 80px;
   height: 60px;

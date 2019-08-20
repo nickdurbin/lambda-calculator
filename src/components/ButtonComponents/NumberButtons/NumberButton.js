@@ -1,13 +1,15 @@
 import React from "react";
 
-const NumberButton = (props) => {
-  const classes = `number-button ${props.name}`
-  function handleChange() {
-    props.setDisplay(props.symbol)
+const NumberButton = ({ setDisplay, name, symbol}) => {
+  
+  const classes = `number-button ${ name }`
+  
+  function calculate() {
+    setDisplay(symbol)
   }
   return (
-    <div className={classes} onClick={() => handleChange()}>
-      {props.symbol}
+    <div className={ classes } onClick={() => calculate()}>
+      { symbol }
     </div>
   );
 };

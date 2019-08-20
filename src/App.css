@@ -124,3 +124,8 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+.zero {
+  width: 220px;
+  border-radius: 40px;
+}

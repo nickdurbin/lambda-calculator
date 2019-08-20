@@ -4,7 +4,7 @@ import { operators } from "../../../data";
 const OperatorButton = ({ setDisplay, symbol }) => {
 
   function calculate() {
-    let total = setDisplay(symbol + operators.value)
+    let total = setDisplay(symbol + operators.value + symbol)
     return total;
   }
 

@@ -2,13 +2,13 @@ import React from "react";
 
 const NumberButton = ({ setDisplay, name, symbol}) => {
   
-  const classes = `number-button ${ name }`
+  const buttonValue = `number-button ${ name }`
   
-  function calculate() {
+  function handleClick() {
     setDisplay(symbol)
   }
   return (
-    <div className={ classes } onClick={() => calculate()}>
+    <div className={ buttonValue } onClick={() => handleClick()}>
       { symbol }
     </div>
   );

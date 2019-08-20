@@ -1,11 +1,11 @@
 import React from "react";
 
-const SpecialButton = (props) => {
-  function handleChange () {
-    if (props.symbol === 'C') return props.setDisplay(0)
+const SpecialButton = ({ symbol, setDisplay }) => {
+  function calculate () {
+    if (symbol === 'C') return setDisplay(0)
   }
   return (
-    <div className='special-button' onClick={() => handleChange()}>{props.symbol}</div>
+    <div className='special-button' onClick={() => calculate()}>{ symbol }</div>
   );
 };
 

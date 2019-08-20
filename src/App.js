@@ -11,16 +11,18 @@ function App() {
   const [display, setDisplay] = useState(0);
 
   return (
-    <div className="container">
-      <Logo />
-      <Display display={display}/>
-      <div className='buttons-container'>
-        <div className="special-number">
-          <Specials setDisplay={setDisplay}/>
-          <Numbers setDisplay={setDisplay}/>
-        </div>
-        <div className="operators">
-          <Operators setDisplay={setDisplay}/>
+    <div className="back-container">
+      <div className="main-container">
+        <Logo />
+        <Display display={display}/>
+        <div className='buttons-container'>
+          <div className="special-number">
+            <Specials setDisplay={setDisplay}/>
+            <Numbers setDisplay={setDisplay}/>
+          </div>
+          <div className="operators">
+            <Operators setDisplay={setDisplay}/>
+          </div>
         </div>
       </div>
     </div>

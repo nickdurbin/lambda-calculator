@@ -1,10 +1,19 @@
-.container {
-  width: 25%;
-  height: 725px;
-  background-color: darkred;
-  border: 3px #131a1a solid;
+.back-container {
+  width: 30%;
+  height: 750px;
+  background-color: #131a1a;
+  border: 3px solid #131a1a;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+  border: 1p solid gray;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .logo-container {
@@ -23,7 +32,7 @@
   justify-content: flex-end;
   align-items: center;
   width: 85%;
-  height: 4.5rem;
+  height: 5.5rem;
   background-color: #131a1a;
   margin: 0 auto;
   border-radius: 40px;
@@ -45,9 +54,9 @@
 .special-button {
   text-align: center;
   margin: 20px;
-  padding-top: 15px;
-  width: 70px;
-  height: 50px;
+  padding-top: 18px;
+  width: 80px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgb(0, 112, 187);
   box-shadow: 0 5px 2px black;
@@ -65,10 +74,10 @@
 
 .number-button {
   text-align: center;
-  margin: 20px 20px;
-  padding-top: 15px;
-  width: 70px;
-  height: 50px;
+  margin: 5px 28px;
+  padding-top: 18px;
+  width: 80px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgb(38, 38, 156);
   box-shadow: 0 5px 2px black;
@@ -103,10 +112,10 @@
 
 .operator-button {
   text-align: center;
-  margin: 20px auto;
-  padding-top: 15px;
-  width: 70px;
-  height: 50px;
+  margin: 14px auto;
+  padding-top: 18px;
+  width: 80px;
+  height: 60px;
   border-radius: 50%;
   box-shadow: 0 5px 2px black;
   background-color: rgb(49, 149, 243);

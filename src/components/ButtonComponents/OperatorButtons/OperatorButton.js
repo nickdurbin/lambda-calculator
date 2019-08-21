@@ -3,7 +3,7 @@ import React from "react";
 const OperatorButton = ({ setDisplay, value, symbol, display }) => {
 
   function handleOperator() {
-    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + symbol);
+    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + value);
   }
 
   function handleCalculation() {

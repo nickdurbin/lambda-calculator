@@ -10,6 +10,10 @@ function App() {
   
   const [display, setDisplay] = useState(0);
 
+  // const handleClick = (symbol) => {
+  //   setDisplay(display + symbol)
+  // }
+
   return (
     <div className="back-container">
       <div className="main-container">
@@ -21,7 +25,7 @@ function App() {
             <Numbers setDisplay={setDisplay}/>
           </div>
           <div className="operators">
-            <Operators setDisplay={setDisplay}/>
+            <Operators setDisplay={setDisplay} />
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const Numbers = ({ setDisplay }) => {
         ?
         <NumberButton key={ index } symbol={ num } setDisplay={ setDisplay } /> 
         : 
-        <NumberButton key={ index } symbol={ num } name='zero' 
+        <NumberButton key={ index } symbol={ num } name='zero-button' 
         setDisplay={ setDisplay } /> 
  })}
     </div>

@@ -1,6 +1,5 @@
 .back-container {
   width: 30%;
-  height: 750px;
   background-color: #131a1a;
   border: 3px solid #131a1a;
   margin: 0 auto;
@@ -9,7 +8,6 @@
 
 .main-container {
   width: 100%;
-  height: 100%;
   background-color: darkred;
   border: 1p solid gray;
   margin: 0 auto;
@@ -128,7 +126,7 @@
   cursor: pointer;
 }
 
-.zero {
+.zero-button {
   width: 220px;
   border-radius: 40px;
   cursor: pointer;

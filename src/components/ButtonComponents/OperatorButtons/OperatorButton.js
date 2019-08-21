@@ -1,9 +1,10 @@
 import React from "react";
+import { operators } from "../../../data";
 
-const OperatorButton = ({ setDisplay, symbol, value, display }) => {
+const OperatorButton = ({ setDisplay, value, symbol, display }) => {
 
   function handleOperator() {
-    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + symbol);
+    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + operators.value);
   }
 
   function handleCalculation() {
@@ -11,7 +12,7 @@ const OperatorButton = ({ setDisplay, symbol, value, display }) => {
   }
 
   return (
-    <div className="operator-button" value={value} onclick={() => handleOperator() || handleCalculation()}>{ symbol }</div>
+    <div className="operator-button" value={value} onClick={() => handleOperator() || handleCalculation()}>{ symbol }</div>
   );
 };
 

@@ -1,10 +1,9 @@
 import React from "react";
-import { operators } from "../../../data";
 
-const OperatorButton = ({ setDisplay, symbol, display }) => {
+const OperatorButton = ({ setDisplay, symbol, display, value }) => {
 
   function handleCalculation() {
-    setDisplay(display + operators.value + symbol)
+    setDisplay([display, value, symbol])
   }
 
   return (

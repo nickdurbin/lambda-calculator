@@ -8,7 +8,7 @@ import Display from "./components/DisplayComponents/Display";
 
 function App() {
   
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState('');
 
   return (
     <div className="back-container">
@@ -17,11 +17,11 @@ function App() {
         <Display display={display}/>
         <div className='buttons-container'>
           <div className="special-number">
-            <Specials setDisplay={setDisplay}/>
-            <Numbers setDisplay={setDisplay}/>
+            <Specials setDisplay={setDisplay} display={display}/>
+            <Numbers setDisplay={setDisplay} display={display}/>
           </div>
           <div className="operators">
-            <Operators setDisplay={setDisplay}/>
+            <Operators setDisplay={setDisplay} display={display}/>
           </div>
         </div>
       </div>

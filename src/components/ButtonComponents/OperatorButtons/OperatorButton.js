@@ -1,14 +1,13 @@
 import React from "react";
-import { operators } from "../../../data";
 
 const OperatorButton = ({ setDisplay, value, symbol, display }) => {
 
   function handleOperator() {
-    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + operators.value);
+    if (symbol === '+' || '-' || 'x' || '/' ) return setDisplay(display + symbol);
   }
 
   function handleCalculation() {
-    if (value === '=') return setDisplay.eval(display);
+    if (value === '=') return setDisplay(eval(display));
   }
 
   return (

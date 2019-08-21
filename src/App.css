@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
+.special-button:active {
+  transform: scale(0.95);
+}
+
 .numbers-container {
   display: flex;
   flex-flow: row wrap;
@@ -84,6 +88,10 @@
   font-size: 2rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.number-button:active {
+  transform: scale(0.95);
 }
 
 .buttons-container {
@@ -126,8 +134,16 @@
   cursor: pointer;
 }
 
+.operator-button:active {
+  transform: scale(0.95);
+}
+
 .zero-button {
   width: 220px;
   border-radius: 40px;
   cursor: pointer;
+}
+
+.zero-button:active {
+  transform: scale(0.95);
 }

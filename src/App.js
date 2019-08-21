@@ -17,11 +17,11 @@ function App() {
         <Display display={display}/>
         <div className='buttons-container'>
           <div className="special-number">
-            <Specials setDisplay={setDisplay}/>
-            <Numbers setDisplay={setDisplay}/>
+            <Specials setDisplay={setDisplay} display={display}/>
+            <Numbers setDisplay={setDisplay} display={display}/>
           </div>
           <div className="operators">
-            <Operators setDisplay={setDisplay}/>
+            <Operators setDisplay={setDisplay} display={display}/>
           </div>
         </div>
       </div>

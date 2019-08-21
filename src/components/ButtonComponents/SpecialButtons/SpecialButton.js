@@ -3,15 +3,15 @@ import React from "react";
 const SpecialButton = ({ symbol, setDisplay, display }) => {
   
   function handleReset() {
-    if (symbol === 'C') return setDisplay('')
+    if (symbol === 'C') return setDisplay('');
   }
 
   function handlePercentage() {
-    if (symbol === '%') return setDisplay(display + symbol)
+    if (symbol === '%') return setDisplay(display + symbol);
   }
 
   function handleAbsoluteValue() {
-    if (symbol === '+/-') return setDisplay(display + symbol)
+    if (symbol === '+/-') return setDisplay(display + symbol);
   }
   
   return (

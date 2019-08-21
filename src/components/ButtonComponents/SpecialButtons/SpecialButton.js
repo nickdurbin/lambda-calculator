@@ -7,11 +7,11 @@ const SpecialButton = ({ symbol, setDisplay, display }) => {
   }
 
   function handlePercentage() {
-    if (symbol === '%') return setDisplay(display + symbol);
+    if (symbol === '%') return setDisplay(display / 100);
   }
 
   function handleAbsoluteValue() {
-    if (symbol === '+/-') return setDisplay(display + symbol);
+    if (symbol === '+/-') return setDisplay(display * -1);
   }
   
   return (

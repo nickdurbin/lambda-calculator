@@ -10,6 +10,10 @@ function App() {
   
   const [display, setDisplay] = useState(0);
 
+  // const handleClick = (symbol) => {
+  //   setDisplay(display + symbol)
+  // }
+
   return (
     <div className="back-container">
       <div className="main-container">

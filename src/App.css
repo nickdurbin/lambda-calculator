@@ -1,5 +1,5 @@
 .back-container {
-  width: 30%;
+  width: 540px;
   background-color: #131a1a;
   border: 3px solid #131a1a;
   margin: 0 auto;
@@ -7,9 +7,9 @@
 }
 
 .main-container {
-  width: 100%;
+  width: 99%;
   background-color: darkred;
-  border: 2px solid gray;
+  border: 3px solid gray;
   margin: 0 auto;
   border-radius: 20px;
 }

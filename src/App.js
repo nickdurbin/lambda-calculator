@@ -8,11 +8,7 @@ import Display from "./components/DisplayComponents/Display";
 
 function App() {
   
-  const [display, setDisplay] = useState(0);
-
-  // const handleClick = (symbol) => {
-  //   setDisplay(display + symbol)
-  // }
+  const [display, setDisplay] = useState('');
 
   return (
     <div className="back-container">

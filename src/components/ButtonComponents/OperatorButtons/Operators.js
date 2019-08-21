@@ -15,5 +15,4 @@ const Operators = ({ setDisplay, display }) => {
   );
 };
 
-
 export default Operators;

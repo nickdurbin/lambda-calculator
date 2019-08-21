@@ -7,14 +7,14 @@ import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
 
 function App() {
-  
+
   const [display, setDisplay] = useState('');
 
   return (
     <div className="back-container">
       <div className="main-container">
         <Logo />
-        <Display display={display}/>
+        <Display total={display}/>
         <div className='buttons-container'>
           <div className="special-number">
             <Specials setDisplay={setDisplay} display={display}/>

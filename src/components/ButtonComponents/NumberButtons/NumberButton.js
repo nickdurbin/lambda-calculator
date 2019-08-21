@@ -1,11 +1,10 @@
 import React from "react";
 
-const NumberButton = ({ setDisplay, name, symbol, display }) => {
-  
+const NumberButton = ({ name, symbol, setDisplay, display}) => {
   const buttonValue = `number-button ${ name }`;
-  
-  function handleClick() {
-    setDisplay(display + symbol)
+
+  const handleClick = () => {
+    return setDisplay(display + symbol);
   }
 
   return (
